@@ -1,0 +1,102 @@
+.anim{
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+   animation-duration: 2s;
+     position: relative;
+    
+}
+
+body{
+     background-color: #E4F9F4
+}
+.typewriter{
+    text-align: center;
+}
+.typewriter h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #555;
+    
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40,end),
+    blink-caret .1s step-end infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 250px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+@keyframes rotate {
+    0%{transform: rotate3d(0,1,0,0deg);
+    }
+  
+        
+         
+    50%{transform: rotate3d(0,1,0,180deg);
+    }
+    75%{transform: rotate3d(0,1,0,90deg);
+    }
+}
+
+.top-cloud{
+    position: absolute;
+    right: 400px;
+    top: 100px;
+    animation-name: topcloud;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+    
+}
+@keyframes topcloud{
+    0%{ right: 400px;}
+    10%{ right: 390px;}
+     20%{ right: 380px;}
+     30%{ right: 370px;}
+     40%{ right: 360px;}
+     50%{ right: 350px;}
+     60%{ right: 360px;}
+     70%{ right: 370px;}
+     80%{ right: 380px;}
+     90%{ right: 390px;}
+    100%{ right: 400px;}
+    
+    
+}
+.bottom-cloud{
+    position: absolute;
+    left: 400px;
+    top: 150px;
+     animation-name: bottomcloud ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes bottomcloud{
+       0%{ left: 400px;}
+    10%{ left: 380px;}
+     20%{ left: 360px;}
+     30%{ left: 340px;}
+     40%{ left: 320px;}
+     50%{ left: 300px;}
+     60%{ left: 320px;}
+     70%{ left: 340px;}
+     80%{ left: 360px;}
+     90%{ left: 380px;}
+    100%{ left: 400px;}
+    
+    
+}
