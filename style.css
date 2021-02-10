@@ -1,0 +1,127 @@
+.font{
+   
+    font-family: 'Days One', sans-serif;
+    
+    
+}
+.float{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    animation-iteration-count: infinite;
+    animation-name: float_btn;
+   animation-duration: 5s;
+    transform: rotate3d(-1,0,0.1,25deg)
+}
+
+@keyframes float_btn{
+    
+    0%{transform: rotate3d(-1,0,0.1,25deg)}
+    25%{transform: rotate3d(0, 0.1, 0, 25deg);}
+    50%{transform: rotate3d(0, 0.1, 0, 25deg);}
+    75%{transform: rotate3d(-1, 0, 0.1, 25deg);}
+    
+    
+}
+
+
+
+
+.anim1{ animation-iteration-count: infinite;
+    animation-name: front;
+    background-color:yellow;
+         color:#333;
+   animation-duration: 2.5s;
+padding: 0px 10px 0px 5px;}
+
+
+.anim2{ animation-iteration-count: infinite;
+    animation-name: back;
+   animation-duration: 2.5s;
+background-color:#333;
+    padding: 0px 10px 0px 5px;
+         color:yellow;}
+
+
+body{
+     background-color: #E4F9F4
+}
+.typewriter h1{
+    text-align: center;
+    top: 100px;
+    font-size: 15px;
+   
+    opacity: 0;
+    font-family: 'Days One', sans-serif;
+}
+@keyframes front {
+    0%{background-color:yellow;
+         color:#333;}
+     25%{background-color:#333;
+         color:yellow;} 
+    50%{background-color:#333;
+         color:yellow;} 
+    75%{background-color:yellow;
+         color:#333;}
+    
+}
+@keyframes back {
+    0%{background-color:#333;
+         color:yellow;}
+     25%{background-color:yellow;
+         color:#333;} 
+    50%{background-color:yellow;
+         color:#333;} 
+    75%{background-color:#333;
+         color:yellow;}
+    
+}
+
+.top-cloud{
+    position: fixed;
+    right: 400px;
+    top: 100px;
+    animation-name: topcloud;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+    
+}
+@keyframes topcloud{
+    0%{ right: 400px;}
+    10%{ right: 390px;}
+     20%{ right: 380px;}
+     30%{ right: 370px;}
+     40%{ right: 360px;}
+     50%{ right: 350px;}
+     60%{ right: 360px;}
+     70%{ right: 370px;}
+     80%{ right: 380px;}
+     90%{ right: 390px;}
+    100%{ right: 400px;}
+    
+    
+}
+.bottom-cloud{
+    position: fixed;
+    left: 400px;
+    top: 200px;
+     animation-name: bottomcloud ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes bottomcloud{
+       0%{ left: 400px;}
+    10%{ left: 380px;}
+     20%{ left: 360px;}
+     30%{ left: 340px;}
+     40%{ left: 320px;}
+     50%{ left: 300px;}
+     60%{ left: 320px;}
+     70%{ left: 340px;}
+     80%{ left: 360px;}
+     90%{ left: 380px;}
+    100%{ left: 400px;}
+    
+    
+}
