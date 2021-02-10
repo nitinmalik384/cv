@@ -7,7 +7,7 @@
 .float{
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 5px;
     animation-iteration-count: infinite;
     animation-name: float_btn;
    animation-duration: 5s;
