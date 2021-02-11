@@ -14,7 +14,7 @@
 .float{
     text-align: center;
     position: relative;
-    top: 200px;
+    top: 150px;
     animation-iteration-count: infinite;
     animation-name: float_btn;
    animation-duration: 5s;
@@ -85,10 +85,9 @@ body{
 }
 .mypic{
     height: 12%;
-    top: 200px;
-    
-    position: fixed;
-    right: 46%;
+   
+     position: fixed;
+   
     
     
     
