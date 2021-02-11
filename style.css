@@ -83,6 +83,17 @@ body{
          color:yellow;}
     
 }
+.mypic{
+    height: 12%;
+    top: 200px;
+    
+    position: fixed;
+    right: 46%;
+    
+    
+    
+    
+}
 
 .top-cloud{
     position: relative;
