@@ -4,11 +4,14 @@
     }
 .btn-primary{
    background-color: #579646;
-   border: 0;
-}.btn-primary:hover{
+    border: 0;
+  
+}.btn-primary:hover, .btn-primary:focus-within{
    background-color: #3d752d;
-   border: 0;
+  
+    border-color: #3d752d;
 }
+
 
 
 .float{
@@ -84,9 +87,11 @@ body{
     
 }
 .mypic{
-    height: 12%;
+    height: 10%;
+    min-height: 80px;
+    max-height: 150px;
    
-     position: fixed;
+     position: absolute;
    
     
     
